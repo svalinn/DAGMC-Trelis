@@ -35,7 +35,7 @@
 
 #define CHK_MB_ERR_RET_MB(A,B)  if (moab::MB_SUCCESS != (B)) { \
   message << (A) << (B) << std::endl;                                   \
-  return rval;                                                         \
+  return (B);                                                         \
   }
 
 DAGMCExportCommand::DAGMCExportCommand() :
